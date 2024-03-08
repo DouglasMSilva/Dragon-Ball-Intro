@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-color {
+    background-image: linear-gradient(to bottom, yellow, orange, orangered);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+.header img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h3 {
+    text-align: center;
+}
+
+.base, .ssj, .ssj2, .ssj3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ssjForm {
+    width: 230px;
+}
+
+#ssj2Form {
+    width: 300px;
+}
+
+#ssj3Form {
+    width: 230px;
+}
+
+#ssj, #ssj2, #ssj3 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous, .next {
+    font-weight: bold;
+    font-size: 50px;
+    color: dodgerblue;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+ /* Estilos para telas com largura menor ou igual a 768 pixels */
+@media screen and (max-width: 768px) {
+    .header img {
+        width: 100%; /* Ajusta a largura da imagem para preencher a largura da tela */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    #ssjForm, #ssj3Form {
+        width: 100%; /* Ajusta a largura das imagens para preencher a largura da tela */
+    }
+
+    #ssj2Form {
+        width: 80%; /* Ajusta a largura da imagem para 80% da largura da tela */
+    }
+
+    .previous, .next {
+        font-size: 30px; /* Reduz o tamanho da fonte dos botões de navegação */
+    }
+}
+

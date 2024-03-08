@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="background-color">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" class="style">
+    <title>Projeto Dragon Ball</title>
+</head>
+<body>
+
+    <div class="header">
+        <img src="Dragon_Ball_manga_1st_Japanese_edition_logo.svg.png">
+    </div>
+
+    <div class="container">
+        <div id="base">
+            <h3>Estado Base</h3>
+            <img src="Goku_Artwork.webp" id="baseForm"> 
+            <div class="buttons">
+                <div class="next" onclick="SSJ()">>></div>
+            </div>
+        </div>
+
+        <div id="ssj">
+            <h3>Super Saiyajin</h3>
+            <img src="goku-super-saiyan-1.png" id="ssjForm">
+            <div class="buttons">
+                <div class="previous" onclick="Base()"><<</div>
+                <div class="next" onclick="SSJ2()">>></div>
+            </div>
+        </div>
+
+        <div id="ssj2">
+            <h3>Super Saiyajin 2</h3>
+            <img src="goku_ssj2_render_2__dokkan_battle__by_maxiuchiha22_dckq3xt-pre.png" id="ssj2Form">
+            <div class="buttons">
+                <div class="previous" onclick="SSJ()"><<</div>
+                <div class="next" onclick="SSJ3()">>></div>
+            </div>
+        </div>
+
+        <div id="ssj3">
+            <h3>Super Saiyajin 3</h3>
+            <img src="goku_ssj3_render.png" id="ssj3Form">
+            <div class="buttons">
+                <div class="previous" onclick="SSJ2()"><<</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
